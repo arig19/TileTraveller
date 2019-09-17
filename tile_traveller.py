@@ -11,7 +11,11 @@
 
 # Forritið mun klárast þegar það er komið í reit 3,1
 # Þá mun það prenta ú "Victory!"
-
+def movement_side(x):
+    if x = "e" or "E":
+        x += 1
+    elif x = "v" or "V":
+        x -= 1
 n or N = 1
 e or E = 1
 v or V = -1
