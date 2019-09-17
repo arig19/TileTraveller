@@ -11,25 +11,44 @@
 
 # Forritið mun klárast þegar það er komið í reit 3,1
 # Þá mun það prenta ú "Victory!"
-def movement(xaxis, yaxis):
+def movement(x, y):
 # Færa forritð til hliðar s.s. hægri eða vinstri
-    if x == "e" or "E":
+    if directions == "e" and "E":
         x += 1
-    elif x == "v" or "V":
+    elif directions == "v" and "V":
         x -= 1
 # færa forritð upp eða niður
-    if y == "n" or "N":
+    if directions == "n" and "N":
         y += 1
-    elif y == "s" or "S":
+    elif directions == "s" and "S":
         y -= 1
-    return xaxis, yaxis
-
-def options_to_move():
-    while start != (3,1):
-        x, y = start(xaxis, yaxis)
-        print(start)
+    return x, y
+N = "(N)orth"
+E = "(E)ast"
+S = "(S)outh"
+W = "(W)est"
 start = (1,1)
-print(start)
-
-
+print("You can travel:", N)
+if start = 1,2:
+    print("You can travel:", N "or", E "or", S)
+elif start = (1,3):
+    print("You can travel:", E "or", S)
+elif start = (2,1):
+    print("You can travel:", N)
+elif start = (2,2):
+    print("You can travel:", W "or", S)
+elif start = (2,3):
+    print("You can travel:", E "or", W)
+elif start = (3,3):
+    print("You can travel:", W "or", S)
+elif start = (3,2):
+    print("You can travel:", N "or", S)
+elif start = (3,1):
+    print("Victory!")
+    break
 directions = input("Directions: ")
+
+
+while start != (3,1):
+    directions = movement(start, start)
+    print(start)
