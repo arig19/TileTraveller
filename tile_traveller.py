@@ -29,23 +29,26 @@ S = "(S)outh"
 W = "(W)est"
 start = (1,1)
 print("You can travel:", N)
-if start = 1,2:
-    print("You can travel:", N "or", E "or", S)
-elif start = (1,3):
-    print("You can travel:", E "or", S)
-elif start = (2,1):
+if start == (1,1):
     print("You can travel:", N)
-elif start = (2,2):
-    print("You can travel:", W "or", S)
-elif start = (2,3):
-    print("You can travel:", E "or", W)
-elif start = (3,3):
-    print("You can travel:", W "or", S)
-elif start = (3,2):
-    print("You can travel:", N "or", S)
-elif start = (3,1):
+elif start == (1,2):
+    print("You can travel:", N, "or", E, "or", S)
+elif start == (1,3):
+    print("You can travel:", E, "or", S)
+elif start == (2,1):
+    print("You can travel:", N)
+elif start == (2,2):
+    print("You can travel:", W, "or", S)
+elif start == (2,3):
+    print("You can travel:", E, "or", W)
+elif start == (3,3):
+    print("You can travel:", W, "or", S)
+elif start == (3,2):
+    print("You can travel:", N, "or", S)
+elif start == (3,1):
     print("Victory!")
-    break
+
+
 directions = input("Directions: ")
 
 
