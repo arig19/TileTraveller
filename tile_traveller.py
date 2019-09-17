@@ -11,24 +11,25 @@
 
 # Forritið mun klárast þegar það er komið í reit 3,1
 # Þá mun það prenta ú "Victory!"
-def movement_side(x):
+def movement(xaxis, yaxis):
+# Færa forritð til hliðar s.s. hægri eða vinstri
     if x == "e" or "E":
         x += 1
     elif x == "v" or "V":
         x -= 1
-    return x
-def movement_upp_down(y):
+# færa forritð upp eða niður
     if y == "n" or "N":
         y += 1
     elif y == "s" or "S":
-        x -= 1
-    return y
+        y -= 1
+    return xaxis, yaxis
 
-directions = input("Direction: ")
-
+def options_to_move():
+    while start != (3,1):
+        x, y = start(xaxis, yaxis)
+        print(start)
 start = (1,1)
 print(start)
-n, N = 1
-e, E = 1
-v, V = -1
-s, S = -1
+
+
+directions = input("Directions: ")
