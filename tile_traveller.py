@@ -12,3 +12,11 @@
 # Forritið mun klárast þegar það er komið í reit 3,1
 # Þá mun það prenta ú "Victory!"
 
+n or N = 1
+e or E = 1
+v or V = -1
+s or S = -1
+
+start = (1,1)
+
+directions = input("Direction: ")
